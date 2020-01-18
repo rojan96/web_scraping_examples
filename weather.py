@@ -4,7 +4,7 @@ import pandas as pd
 period_names = []
 short_desc = []
 temp = []
-page = requests.get('https://forecast.weather.gov/MapClick.php?lat=40.7146&lon=-74.0071#.XiKs88hKhaQ')
+page = requests.get('https://forecast.weather.gov/MapClick.php?lat=31.80967000000004&lon=-85.97216999999995#.XiN3XMhKhPY')
 soup = BeautifulSoup(page.content, 'html.parser')
 
 items = soup.find_all(class_ = 'tombstone-container')

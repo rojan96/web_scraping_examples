@@ -21,10 +21,10 @@ results_stuff = pd.DataFrame(
      'Ending in':ending_in,
      'Price':price,
      })
-print(results_stuff)
-results_stuff.to_csv('auction.csv')
+print(results_stuff['Price'])
+# results_stuff.to_csv('auction.csv')
 
-
-print(titles[:5])
-print(price[:5])
-print(ending_in[:5])
+#
+# print(titles[:5])
+# print(price[:5])
+# print(ending_in[:5])
