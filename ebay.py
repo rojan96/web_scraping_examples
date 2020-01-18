@@ -7,9 +7,8 @@ price = []
 search=input("What do you wanna search for?")
 page = requests.get('https://www.ebay.com/sch/i.html?_from=R40&_nkw='+search+'&_sacat=0&LH_Auction=1&_sop=1&_ipg=200')
 soup = BeautifulSoup(page.content, 'html.parser')
-results = soup.find(class_='srp-results srp-list clearfix')
 
-each_result = results.find_all(class_='s-item__wrapper clearfix')
+each_result = soup.find_all(class_='s-item__wrapper clearfix')
 
 
 for item in each_result:
