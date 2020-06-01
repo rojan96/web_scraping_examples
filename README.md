@@ -1,2 +1,2 @@
 # web_scraping_examples
-Web Scraping Examples for TroyHack Workshop.
+Web Scraping Examples using BeautifulSoup for TroyHack Workshop.
